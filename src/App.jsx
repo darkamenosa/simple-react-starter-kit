@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './styles.css';
+import Home from './containers/Home';
 
 @CSSModules(styles)
 class App extends Component {
@@ -11,7 +12,9 @@ class App extends Component {
 
   render() {
     return (
-      <div styleName="hello" />
+      <div styleName="hello">
+        <Home />
+      </div>
     );
   }
 }
